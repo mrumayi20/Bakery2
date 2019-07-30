@@ -1,0 +1,124 @@
+
+       body{
+           background-color: rgb(116, 112, 112);
+           color: whitesmoke;
+           font-family: Arial, Helvetica, sans-serif;
+           margin: 0;
+           padding: 0;
+       }
+    
+      header{
+         background-color: black;
+         background-image: url("images.jpg");
+         background-repeat: no-repeat;
+         background-size: 100%;
+         background-position: center;
+         padding: 20px;
+         height: 300px;
+         color:black;
+         text-align: center;
+      }
+      header a{
+          color: white;
+          display: inline;
+      }
+     header .logo a{
+         background-image: url("logo.jpg");
+         background-size: 100px;
+         background-repeat: no-repeat;
+         width: 100px;
+         display: inline-block;
+         height: 100px;
+         top: -40;
+         position: relative;
+         text-align: center;
+         text-indent: -9999999999px;/*to get rid of the text which we have added*/ 
+     }
+     header .mobile
+     {
+         display: none;
+     }
+
+     ul{
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+    
+    li{
+       display: inline-block;
+       margin-right: 10px;
+    }
+   /* @media screen and (max-width: 715px){
+        header {
+            height: 250px;
+            background-position: 0 -30px;
+          }
+         header .mobile
+         {
+             display: inline-block;
+         }
+         header .desktop
+         {
+             display: inline;
+         }
+     }*/
+     @media screen and (max-width: 400px)
+     {
+        header{
+            height: 100px;
+            background-position: 0 -30;
+        }
+        header .mobile{
+            display: inline-block;
+        }
+        header .desktop
+        {
+            display: none;
+        }
+
+     }
+      .features{
+         background-color: gray;
+         color:black;
+         padding: 20px;
+         display: flex;
+         flex-direction: row;
+      }
+      @media screen and (max-width: 400px)
+      {
+          .features
+          {
+              flex-wrap: wrap;
+              margin:0 20px 0 20px;
+          }
+      }
+      .features figure img{
+         width: 150px;
+         border-radius: 10%;
+         border: 1px solid white;
+         box-shadow: black 0 0 10px;
+      }
+      .features figure{
+         margin: auto;
+         width: 100%;
+         text-align: center;
+      }
+      section{
+           background-color: black;
+      }
+     
+
+      div{
+          background-color: rgb(216, 139, 152);
+          color:black;
+          margin:auto;
+          width: 100px;
+      }
+      footer{
+          background-color: black;
+          padding:30px;
+          color: gray;
+          text-align: center;
+      }
+    
